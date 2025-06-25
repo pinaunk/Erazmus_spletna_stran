@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O meni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Meni -->
+   <header>
+        <nav class="navbar">
+            <div class="logo">Erasmus Izkušnja </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                 <li><a href="index.html">Domov</a></li>
+                <li><a href="o_meni.html">O meni</a></li>
+                <li><a href="izkusnja.html">Moja izkušnja</a></li>
+                <li><a href="plusi_minusi.html">Plusi in minusi</a></li>
+                <li><a href="nasveti.html">Nasveti in predlogi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Glavna vsebina -->
+   <main class="o-meni">
+  <section class="profile-section">
+    <div class="photo-me">
+      <img src="pina1.jpg" alt="Fotografija Pina" />
+      <!--<img src="pina2.jpg" alt="Fotografija Pina 2" /> -->
+    </div>
+
+    <div class="info-card">
+      <h2>O meni</h2>
+      <ul class="personal-info">
+        <li><strong>Starost:</strong> 23 let</li>
+        <li><strong>Letnik:</strong> UNI, 3. letnik</li>
+        <li><strong>Smer študija:</strong> Organizacija in management informacijskih sistemov</li>
+        <li><strong>Domača fakulteta</strong> Fakulteta za organizacijske vede, Univerza v Mariboru</li>
+        <li><strong>Fakulteta izmenjave:</strong> Universität der Bundeswehr München</li>
+        <li><strong>Čas izmenjave:</strong> 1. semester: 30. september - 30. marec, 2025</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about-text">
+    <h3>Kdo sem?</h3>
+    <p>
+      Sem Pina, študentka informatike z veliko željo po raziskovanju sveta, spoznavanju novih ljudi in izzivih izven cone udobja. 
+      Izmenjava v Nemčiji je bila zame neprecenljiva izkušnja, ki mi je razširila obzorja tako osebnostno kot tudi strokovno. Za izmenjavo sem se odločila,
+      saj sem si že od vedno želela živeti v tujini in se tam izobraževati. Nemčija se mi je zdela dobra izbira tudi zaradi jezika, saj sem se 
+    že v srednji šoli učila nemščino, ki sem jo sedaj zagotovo tudi nadgradila. <br>
+    V prostem času sem drugače že dolgoletna balerina, pred izmenajvo pa sem nekaj let delala kot učiteljica angleščine, 
+    plesa in baleta.
+    </p>
+  </section>
+</main>
+
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Te zanima več? Kontaktiraj me:</h3>
+                <p>E-pošta: pina.unk@student.um.si</p>
+                <p>Telefon: +386 30 933 501</p>
+                <p>Instagram: @pina.unk</p>
+            </div>
+
+            <form id="contact-form">
+                <h3>Ali pa me kontaktiraj preko obrazca:</h3>
+
+                <label for="name">Vaše ime:</label><br />
+                <input type="text" id="name" name="name" required /><br /><br />
+
+                <label for="email">Vaš e-mail:</label><br />
+                <input type="email" id="email" name="email" required /><br /><br />
+
+                <label for="message">Vaše sporočilo:</label><br />
+                <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+                <button type="submit">Pošlji</button>
+            </form>
+        </div>
+    </footer>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    alert("Hvala za sporočilo, odgovorim kmalu!");
+    this.reset(); // počisti obrazec
+  });
+</script>
+
+</body>
+</html>

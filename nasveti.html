@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasveti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Erasmus Izkušnja</div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="o_meni.html">O meni</a></li>
+                <li><a href="izkusnja.html">Moja izkušnja</a></li>
+                <li><a href="plusi_minusi.html">Plusi in minusi</a></li>
+                <li><a href="nasveti.html">Nasveti & predlogi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+         <h1>Nasveti in predlogi</h1>
+
+        <div class="intro-description">
+            <p>Ne razmišljaj, samo pojdi!
+            </p>
+        </div>
+        
+               
+
+                <div class="tips-columns">
+                    <section class="tips-section">
+                        <h2>Nasveti za študente</h2>
+                        <div class="tips-boxes">
+                            <div class="tip-box">🎒 Resno – ne razmišljaj preveč, samo pojdi, ne bo ti žal!</div>
+                            <div class="tip-box">📚 Dobro se pozanimaj o tuji instituciji – kakšna so predavanja,
+                                predmeti, izpiti, ocene itd.</div>
+                                <div class="tip-box">💰 Pozanimaj se katere štipendije ti pripadajo. Tukaj imaš
+                                    res veliko opcij in lahko brezskrbno doživiš svoj Erazmus. 
+                                </div>
+                            <div class="tip-box">🏠 Čimprej si poišči nastanitev! Vprašaj fakulteto, če nudijo kakšne
+                                opcije, sicer začni iskati sam/a čimprej.</div>
+                            <div class="tip-box">🌍 Udeležuj se Erasmus dogodkov – odlična priložnost za spoznavanje
+                                ljudi in kultur.</div>
+                            <div class="tip-box">🧳 Ne spakiraj preveč! Vzemi nujne stvari in praktična oblačila – nekaj
+                                malega za posebne priložnosti.</div>
+                            <div class="tip-box">💪 Naj te ne bo strah izkusiti nove stvari! Pojdi na dogodek tudi sam/a
+                                – postane lažje!</div>
+                            <div class="tip-box">🧠 Nauči se samostojnosti – izkoristi priložnost za bolj samostojno
+                                življenje.</div>
+                        </div>
+                    </section>
+
+                    <section class="tips-section">
+                        <h2>Predlogi za izboljšave</h2>
+                        <h4>…mogoče za kakšnega koordinatorja ali učitelja</h4>
+                        <div class="tips-boxes">
+                            <div class="tip-box">🔍 Podajajte transparetne informacije. Meni je bilo "obljubljeno" vsi predmeti v angleščini,
+                                vsi predmeti na isti stopnji - torej dodiplomski, vse fakultete na razpisanem seznamu so primerne za našo smer študiranja,
+                                na izmenjavi bo še veliko drugih študentov, ki bodo v isti situaciji, kot vi, brez skrbi si boste našli družno...NI RES!</div>
+                            <div class="tip-box">📝 DDobro je treba pregledati sporazum Learning agreement. Mi smo študentje, ki se verjetno
+                                prvič udeležujemo izmenjave in ne vemo točno na kaj moramo biti pozorni.Sporazum naj bo temeljito pregledan s strani koordinatorja 
+                                preden se podpiše.</div>
+                            <div class="tip-box">📎 Omogočite študentom vključitev v razred. Pisati cel kup seminarskih na izmenjavi, namesto, da bi se kaj 
+                                konkretnega naučili je brezsmiselno. Sploh pa danes, ko vsi vemo, da je seminarsko napisal naš prijatelj chat gpt.</div>
+                            <div class="tip-box">🙋 Nekdo naj bo odgovoren za prihajajoče študente. Naj imajo podporo glede študija in osebnega življenja, 
+                                nastanitve itd. Odgovorna oseba naj ima pristno zanimanje za druženje s tujimi študenti, drugače to ne pomaga nikomur. </div>
+                                    <div class="tip-box"> Uskladite učne načrte z dejanskimi urniki/informacijami na spletni učilnici. V mojem primeru 
+                                        se imena predmetov niso skladala, ravno tako se nekateri predmeti niso izvajali takrat kot je pisalo. </div>
+                        </div>
+                    </section>
+                </div>
+
+            </main>
+
+
+
+   <!-- Footer -->
+    <footer id="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Te zanima več? Kontaktiraj me:</h3>
+                <p>E-pošta: pina.unk@student.um.si</p>
+                <p>Telefon: +386 30 933 501</p>
+                <p>Instagram: @pina.unk</p>
+            </div>
+
+            <form id="contact-form">
+                <h3>Ali pa me kontaktiraj preko obrazca:</h3>
+
+                <label for="name">Vaše ime:</label><br />
+                <input type="text" id="name" name="name" required /><br /><br />
+
+                <label for="email">Vaš e-mail:</label><br />
+                <input type="email" id="email" name="email" required /><br /><br />
+
+                <label for="message">Vaše sporočilo:</label><br />
+                <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+                <button type="submit">Pošlji</button>
+            </form>
+        </div>
+    </footer>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    alert("Hvala za sporočilo, odgovorim kmalu!");
+    this.reset(); // počisti obrazec
+  });
+</script>
+</body>
+
+</html>
